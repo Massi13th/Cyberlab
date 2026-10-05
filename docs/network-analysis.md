@@ -80,10 +80,12 @@ During the TLS connection, the following traffic was observed:
 - TLS Application Data
 - TLS 1.3
 
-![TLS encrypted traffic analysis](../screenshots/tls-analysis.png)
+
 
 Unlike the previous HTTP capture, the HTTP application data was protected by TLS and could not be directly inspected in plaintext.
 
 The Client Hello exposed some connection metadata, including the Server Name Indication (SNI) for example.com.
 
 This demonstrates an important difference between HTTP and HTTPS: TLS protects the application-layer content while some connection metadata may still remain observable.
+
+![TLS encrypted traffic analysis](../screenshots/tls-analysis.png)
